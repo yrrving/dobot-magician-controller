@@ -5,13 +5,16 @@ En enkel lokal app för att ansluta till en `Dobot Magician`, spara positioner o
 ## Ladda ner
 
 Mac:
-- `DobotKontroll_v2.zip`
+- [DobotKontroll_v2.zip](https://github.com/yrrving/dobot-magician-controller/releases/download/v1.0.0/DobotKontroll_v2.zip)
 
 Windows:
-- `DobotKontroll_PC_buildkit.zip`
+- [DobotKontroll_PC_buildkit.zip](https://github.com/yrrving/dobot-magician-controller/releases/download/v1.0.0/DobotKontroll_PC_buildkit.zip)
 
 Releases:
-- Kommer att finnas på projektets Releases-sida
+- [GitHub Releases](https://github.com/yrrving/dobot-magician-controller/releases/tag/v1.0.0)
+
+Repository:
+- [yrrving/dobot-magician-controller](https://github.com/yrrving/dobot-magician-controller)
 
 ## Funktioner
 

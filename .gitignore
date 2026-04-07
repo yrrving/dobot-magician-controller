@@ -1,0 +1,5 @@
+.DS_Store
+windows/build/
+windows/dist/
+__pycache__/
+*.pyc

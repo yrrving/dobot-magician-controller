@@ -1,0 +1,72 @@
+Steg 1: Förbered Windows-datorn
+1. Använd en Windows-dator med USB-port.
+2. Om ni bara har källfilerna och inte en färdig .exe ännu:
+   - Installera Python 3
+   - Öppna mappen `windows`
+   - Kör `build_windows.bat`
+3. När byggningen är klar finns programmet som:
+   `windows\dist\DobotKontroll_PC.exe`
+
+Steg 2: Koppla in Dobot
+1. Koppla in ström till Dobot.
+2. Koppla in USB-kabeln direkt i datorn.
+3. Vänta några sekunder tills armen vaknar.
+4. Lampan ska vara grön eller bli grön när den är redo.
+
+Om lampan är röd:
+- Flytta armen försiktigt bort från ytterlägen.
+- Starta om Dobot med ström av/på.
+
+Steg 3: Starta programmet
+1. Dubbelklicka `DobotKontroll_PC.exe`
+2. Ett fönster öppnas med knappar för anslutning och rörelse.
+
+Om Windows visar en säkerhetsvarning:
+- Klicka `More info`
+- Klicka `Run anyway`
+
+Steg 4: Anslut till armen
+1. Klicka `Refresh`
+2. Välj den COM-port som tillhör Dobot
+3. Klicka `Connect`
+4. Klicka `Test Pose`
+
+Om statusraden visar `Pose OK` är kommunikationen igång.
+
+Steg 5: Användning - grundflöde
+1. Flytta armen manuellt till första läget (A)
+2. Klicka `Spara punkt`
+3. Flytta armen till nästa läge (B)
+4. Klicka `Spara punkt`
+5. Lägg till fler punkter vid behov
+6. Klicka `Start loop`
+
+Armen rör sig nu kontinuerligt mellan punkterna i loop.
+
+Steg 6: Stoppa
+- Klicka `Stop loop` för att stanna rörelsen
+- Klicka `Disconnect` om ni vill koppla från armen
+- Stäng fönstret för att avsluta programmet helt
+
+Vanliga problem
+
+Ingen port syns efter `Refresh`
+- Kontrollera USB-kabeln
+- Testa en annan USB-port
+- Starta om Dobot
+- Starta programmet igen
+
+Det går inte att ansluta
+- Kontrollera att rätt COM-port är vald
+- Kontrollera att ingen annan programvara använder Dobot samtidigt
+
+Armen klickar och rör sig inte, lampan är röd
+- Armen står i ett mekaniskt ytterläge
+- Flytta den manuellt inåt eller uppåt
+- Starta om Dobot
+
+Viktigt att veta
+- Programmet fungerar lokalt utan internet
+- Inga konton behövs
+- Samma källkod är förberedd för både macOS och Windows
+- Windows-versionen måste byggas på en Windows-dator

@@ -1,0 +1,3 @@
+pydobot
+pyserial
+pyinstaller

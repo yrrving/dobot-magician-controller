@@ -88,6 +88,7 @@ class AppState:
             self.set_status(f"Kunde inte spara punkt: {type(e).__name__}")
 
     def clear_points(self):
+        self.stop_loop()
         self.points = []
         self.set_status("Punkter rensade.")
 
@@ -120,6 +121,8 @@ class AppState:
         idx = 0
         while not self.stop_evt.is_set():
             try:
+                if not self.points:
+                    break
                 pt = self.points[idx % len(self.points)]
                 with self.lock:
                     self.dev.move_to(*pt, wait=True)
